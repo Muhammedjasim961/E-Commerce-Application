@@ -1,3 +1,7 @@
+<h1 style="color: yellowgreen;font-family: 'Times New Roman', serif;">LIVE PREVIEW</h1>
+
+[**PREVIEW LINK**](https://muhammedjasim961.github.io/E-Commerce-Application/)
+
 ![alt text](image.png)
 
 <h1 style="color: yellow;font-family: 'Times New Roman', serif;"> FakeStore E-Commerce Application</h1>
