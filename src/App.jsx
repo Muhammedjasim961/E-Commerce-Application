@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Navbar from "./components/Navbar";
@@ -11,7 +11,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />{" "}
-        {/* ✅ Fix routing */}
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>

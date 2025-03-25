@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Reset some basic styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,7 +44,7 @@ body {
 .product-card img {
   width: 100%;
   height: 300px;
-  object-fit: cover; /* Ensures consistent image sizing */
+  object-fit: cover;
 }
 
 .product-card h3 {

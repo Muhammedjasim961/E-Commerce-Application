@@ -50,7 +50,6 @@ const ProductDetails = () => {
           <p className="text-gray-600 mb-4">Category: {product.category}</p>
           <p className="text-gray-600">Rating: {product.rating.rate} ⭐</p>
 
-          {/* Fake details */}
           <div className="mt-6">
             <h2 className="text-2xl font-semibold">Specifications:</h2>
             <ul className="list-disc pl-5">
@@ -69,7 +68,7 @@ const ProductDetails = () => {
               Add to Cart
             </button>
             <button
-              onClick={() => navigate(-1)} // 🔙 Go back
+              onClick={() => navigate(-1)} 
               className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-6 rounded"
             >
               Go Back

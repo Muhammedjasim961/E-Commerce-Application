@@ -8,8 +8,7 @@ const ProductList = () => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState(""); // Search term state
-
+  const [searchTerm, setSearchTerm] = useState("");
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -39,7 +38,6 @@ const ProductList = () => {
     fetchProducts();
   }, []);
 
-  // Filter products by category and search term
   const filteredProducts = products
     .filter(
       (product) =>
@@ -55,18 +53,16 @@ const ProductList = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-8">Product List</h1>
 
-      {/* Search Bar */}
       <div className="flex justify-center mb-6">
         <input
           type="text"
           placeholder="Search by product name..."
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)} // Real-time filtering
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="p-2 border rounded-md w-full max-w-lg outline-none"
         />
       </div>
 
-      {/* Category Filter */}
       <div className="flex justify-center gap-4 mb-6">
         {categories.map((category) => (
           <button
@@ -83,7 +79,6 @@ const ProductList = () => {
         ))}
       </div>
 
-      {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (

@@ -5,7 +5,7 @@ const initialState = {
   products: [],
   filteredProducts: [],
   categories: [],
-  status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
+  status: "idle",
   error: null,
 };
 
