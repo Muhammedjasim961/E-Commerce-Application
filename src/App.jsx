@@ -3,11 +3,13 @@ import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
+import ThemeToggle from "./components/ThemeToggle";
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
+      <ThemeToggle />
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />{" "}

@@ -2,7 +2,7 @@
 
 [**PREVIEW LINK**](https://muhammedjasim961.github.io/E-Commerce-Application/)
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 <h1 style="color: yellow;font-family: 'Times New Roman', serif;"> FakeStore E-Commerce Application</h1>
 
@@ -70,6 +70,9 @@ http://localhost:5173
 ┃ ┣ 📄 ProductList.jsx # Main product listing with pagination
 ┃ ┣ 📄 ProductDetail.jsx  # Single product details
 ┃ ┣ 📄 Cart.js         # Cart functionality
+┃ ┣ 📄 Dark.js         # Dark functionality
+┃ ┣ 📄 LightMode.js    # Light Mode functionality
+┃ ┣ 📄 ThemeToggle.js  # TheMode functionality
 ┣ 📁 pages
 ┃ ┣ 📄 Home.jsx        # Home page with products
 ┣ 📁 redux             # Redux store and slices
@@ -77,6 +80,8 @@ http://localhost:5173
 ┃ ┣ 📄 cartSlice.js    # Cart management
 ┃ ┣ 📄 productSlice.js # Product management
 ┣ 📁 assets            # Images, icons, or static files
+┃ ┣ 📁 css             # themeToggle style
+┃ ┣ 📄 css.js          # dark light mode style
 ┣ 📄 App.jsx           # Main app component
 ┣ 📄 main.jsx          # Entry point for ReactDOM rendering
 ┣ 📄 index.css         # Global styles
